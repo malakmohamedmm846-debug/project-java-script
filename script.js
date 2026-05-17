@@ -1,30 +1,14 @@
-function randomColor() {
+function addData() {
 
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
+    let table = document.getElementById("myTable");
 
-    return `rgb(${r},${g},${b})`;
-}
+    let row = table.insertRow();
 
-function generateColors() {
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
 
-    let container = document.getElementById("colors");
-
-    container.innerHTML = "";
-
-    for (let i = 0; i < 5; i++) {
-
-        let color = randomColor();
-
-        let box = document.createElement("div");
-
-        box.classList.add("colorBox");
-
-        box.style.backgroundColor = color;
-
-        box.innerText = color;
-
-        container.appendChild(box);
-    }
+    cell1.innerHTML = "1";
+    cell2.innerHTML = "fatma";
+    cell3.innerHTML = "Developer";
 }

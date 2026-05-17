@@ -2,16 +2,22 @@
 <html>
 
 <head>
-    <title>Color Palette</title>
+    <title>Table Generator</title>
 </head>
 
 <body>
 
-    <h2>Color Palette Generator</h2>
+    <h2>Table Generator</h2>
 
-    <button onclick="generateColors()">Generate Colors</button>
+    <table id="myTable" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+    </table>
 
-    <div id="colors"></div>
+    <button onclick="addData()">Add Data</button>
 
     <script src="script.js"></script>
 
